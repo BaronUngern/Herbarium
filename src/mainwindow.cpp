@@ -106,7 +106,7 @@ MainWindow::MainWindow(QWidget *parent) :
 void MainWindow::setupModel()
 {
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("herbarium2.sqlite3");
+    db.setDatabaseName("herbarium.sqlite3");
     if (!db.open()) {
         qDebug()<<db.lastError().text();
     }
